@@ -51,6 +51,20 @@
   </style>
 </head>
 <body>
+
+  <div id="warning" style="position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);color:white;display:flex;justify-content:center;align-items:center;text-align:center;font-size:1.5rem;z-index:1000;">
+  <div>
+    Aviso: Esse site não substitui o atendimento médico, consulte seu doutor antes de seguir os exercícios do site.<br>
+    <button id="closeWarning" style="margin-top:20px;padding:10px 20px;font-size:1rem;cursor:pointer;">Eu entendo</button>
+  </div>
+</div>
+
+<script>
+  document.getElementById('closeWarning').onclick = function() {
+    document.getElementById('warning').style.display = 'none';
+  }
+</script>
+  
   <header>
     <img src="https://media.discordapp.net/attachments/1290499732283723786/1402457606533939232/tmp_705d1412-bade-4d97-9f13-86fe6d64b5ff.jpg?ex=6895f62d&is=6894a4ad&hm=7225cc498c32dfb8f7a3953b682560752caf4e48edbb067a223e5c4bb82eb48d&format=webp&width=680&height=680&">
     <h1>Vida Ativa</h1>
